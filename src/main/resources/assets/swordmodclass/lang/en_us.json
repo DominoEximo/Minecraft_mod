@@ -3,5 +3,9 @@
   "item.swordmodclass.raw_sapphire": "Raw Sapphire",
   "item.swordmodclass.sapphire_sword": "Sapphire Sword",
 
+  "block.swordmodclass.sapphire_block": "Block of Sapphire",
+  "block.swordmodclass.raw_sapphire_block": "Block of Raw Sapphire",
+
+
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

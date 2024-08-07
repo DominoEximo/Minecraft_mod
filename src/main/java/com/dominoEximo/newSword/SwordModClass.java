@@ -1,6 +1,7 @@
 package com.dominoEximo.newSword;
 
 
+import com.dominoEximo.newSword.blocks.ModBlocks;
 import com.dominoEximo.newSword.items.ModCreativeModTabs;
 
 import com.dominoEximo.newSword.items.ModItems;
@@ -27,6 +28,7 @@ public class SwordModClass {
         ModCreativeModTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
