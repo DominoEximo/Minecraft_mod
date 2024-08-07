@@ -7,6 +7,7 @@ import net.minecraft.tags.TagKey;
 import net.minecraft.util.LazyLoadedValue;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.Tier;
+import net.minecraft.world.item.Tiers;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.Block;
 
@@ -14,7 +15,7 @@ import com.dominoEximo.newSword.items.ModItems;
 import java.util.function.Supplier;
 
 public enum ModItemTier implements Tier {
-    SAPPHIRE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 2031, 2.0F, 24.0F, 15, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
+    SAPPHIRE(BlockTags.INCORRECT_FOR_NETHERITE_TOOL, 200, 2.0F, 7.0F, 15, () -> Ingredient.of(ModItems.SAPPHIRE.get()));
 
     private final TagKey<Block> incorrectBlocksForDrops;
     private final int uses;
