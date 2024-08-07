@@ -1,2 +1,2 @@
-# Minecraft_mod
-A simple mincraft mod for the sake of learning coding.
+# Minecraft mod
+A simple minecraft mod for the sake of learning coding.
