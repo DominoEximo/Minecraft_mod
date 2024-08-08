@@ -23,25 +23,7 @@ import java.util.Map;
 import java.util.function.Supplier;
 
 public class ModArmorMaterials extends ArmorMaterials{
-    public static final Holder<ArmorMaterial> LEATHER = register(
-            "leather",
-            Util.make(new EnumMap<>(ArmorItem.Type.class), p_327101_ -> {
-                p_327101_.put(ArmorItem.Type.BOOTS, 1);
-                p_327101_.put(ArmorItem.Type.LEGGINGS, 2);
-                p_327101_.put(ArmorItem.Type.CHESTPLATE, 3);
-                p_327101_.put(ArmorItem.Type.HELMET, 1);
-                p_327101_.put(ArmorItem.Type.BODY, 3);
-            }),
-            15,
-            SoundEvents.ARMOR_EQUIP_LEATHER,
-            0.0F,
-            0.0F,
-            () -> Ingredient.of(Items.LEATHER),
-            List.of(
-                    new ArmorMaterial.Layer(ResourceLocation.withDefaultNamespace("leather"), "", true),
-                    new ArmorMaterial.Layer(ResourceLocation.withDefaultNamespace("leather"), "_overlay", false)
-            )
-    );
+
     public static final Holder<ArmorMaterial> SAPPHIRE = ModArmorMaterials.register("sapphire", Util.make(new EnumMap<>(ArmorItem.Type.class), p_327103_ -> {
         p_327103_.put(ArmorItem.Type.BOOTS, 3);
         p_327103_.put(ArmorItem.Type.LEGGINGS, 6);
