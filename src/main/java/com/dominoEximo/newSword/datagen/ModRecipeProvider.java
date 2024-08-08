@@ -15,7 +15,8 @@ import java.util.concurrent.CompletableFuture;
 
 public class ModRecipeProvider extends RecipeProvider implements IConditionBuilder {
     private static final List<ItemLike> SAPPHIRE_SMELTABLES = List.of(ModItems.RAW_SAPPHIRE.get(),
-            ModBlocks.SAPPHIRE_ORE.get());
+            ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHER_SAPPHIRE_ORE.get(),
+            ModBlocks.END_STONE_SAPPHIRE_ORE.get());
 
     public ModRecipeProvider(PackOutput p_248933_, CompletableFuture<HolderLookup.Provider> provider) {
         super(p_248933_, provider);
@@ -76,6 +77,36 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern(" # ")
                 .define('S', ModItems.SAPPHIRE.get())
                 .define('#', Items.STICK)
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(recipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.TOOLS, ModItems.SAPPHIRE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.SAPPHIRE.get())
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(recipeOutput);
 

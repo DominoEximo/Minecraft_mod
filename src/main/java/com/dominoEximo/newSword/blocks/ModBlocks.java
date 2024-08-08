@@ -33,6 +33,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_ORE = registerBlock("sapphire_ore",
             () -> new DropExperienceBlock(UniformInt.of(3, 6), BlockBehaviour.Properties.ofFullCopy(Blocks.STONE)
                                 .strength(2f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> DEEPSLATE_SAPPHIRE_ORE = registerBlock("deepslate_sapphire_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),BlockBehaviour.Properties.ofFullCopy(Blocks.DEEPSLATE)
+                    .strength(3f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> NETHER_SAPPHIRE_ORE = registerBlock("nether_sapphire_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),BlockBehaviour.Properties.ofFullCopy(Blocks.NETHERRACK)
+                    .strength(1f).requiresCorrectToolForDrops()));
+    public static final RegistryObject<Block> END_STONE_SAPPHIRE_ORE = registerBlock("end_stone_sapphire_ore",
+            () -> new DropExperienceBlock(UniformInt.of(3, 7),BlockBehaviour.Properties.ofFullCopy(Blocks.END_STONE)
+                    .strength(5f).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
