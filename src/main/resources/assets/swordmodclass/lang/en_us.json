@@ -1,10 +1,17 @@
 {
   "item.swordmodclass.sapphire": "Sapphire",
   "item.swordmodclass.raw_sapphire": "Raw Sapphire",
+
+
   "item.swordmodclass.sapphire_sword": "Sapphire Sword",
+  "item.swordmodclass.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.swordmodclass.sapphire_axe": "Sapphire Axe",
+  "item.swordmodclass.sapphire_shovel": "Sapphire Shovel",
+  "item.swordmodclass.sapphire_hoe": "Sapphire Hoe",
 
   "block.swordmodclass.sapphire_block": "Block of Sapphire",
   "block.swordmodclass.raw_sapphire_block": "Block of Raw Sapphire",
+  "block.swordmodclass.sapphire_ore": "Sapphire Ore",
 
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"

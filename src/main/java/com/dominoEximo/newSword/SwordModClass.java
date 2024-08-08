@@ -45,6 +45,11 @@ public class SwordModClass {
             event.accept(ModItems.SAPPHIRE);
             event.accept(ModItems.RAW_SAPPHIRE);
             event.accept(ModItems.SAPPHIRE_SWORD);
+            event.accept(ModItems.SAPPHIRE_PICKAXE);
+            event.accept(ModItems.SAPPHIRE_AXE);
+            event.accept(ModItems.SAPPHIRE_HOE);
+            event.accept(ModItems.SAPPHIRE_SHOVEL);
+
         }
     }
 

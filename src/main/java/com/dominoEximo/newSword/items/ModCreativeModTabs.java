@@ -19,13 +19,22 @@ public class ModCreativeModTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModItems.SAPPHIRE.get()))
                     .title(Component.translatable("creativetab.tutorial_tab"))
                     .displayItems((itemDisplayParameters, output) -> {
+                        //materials
                         output.accept(ModItems.SAPPHIRE.get());
                         output.accept(ModItems.RAW_SAPPHIRE.get());
-                        output.accept(ModItems.SAPPHIRE_SWORD.get());
 
+                        //blocks
                         output.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         output.accept(ModBlocks.SAPPHIRE_ORE.get());
+
+                        //tools
+                        output.accept(ModItems.SAPPHIRE_SWORD.get());
+                        output.accept(ModItems.SAPPHIRE_AXE.get());
+                        output.accept(ModItems.SAPPHIRE_HOE.get());
+                        output.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        output.accept(ModItems.SAPPHIRE_SHOVEL.get());
+
 
                     })
                     .build());

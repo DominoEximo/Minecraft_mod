@@ -18,15 +18,32 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+
+        //Simple items
         simpleItem(ModItems.SAPPHIRE);
         simpleItem(ModItems.RAW_SAPPHIRE);
-        simpleItem(ModItems.SAPPHIRE_SWORD);
+
+
+        //Handheld items
+        handheldItem(ModItems.SAPPHIRE_SWORD);
+        handheldItem(ModItems.SAPPHIRE_AXE);
+        handheldItem(ModItems.SAPPHIRE_HOE);
+        handheldItem(ModItems.SAPPHIRE_SHOVEL);
+        handheldItem(ModItems.SAPPHIRE_PICKAXE);
+
+
 
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 ResourceLocation.tryParse("item/generated")).texture("layer0",
+                ResourceLocation.fromNamespaceAndPath(SwordModClass.MODID,"item/" + item.getId().getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                ResourceLocation.tryParse("item/handheld")).texture("layer0",
                 ResourceLocation.fromNamespaceAndPath(SwordModClass.MODID,"item/" + item.getId().getPath()));
     }
 }
