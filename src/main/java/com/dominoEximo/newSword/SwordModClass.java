@@ -2,9 +2,12 @@ package com.dominoEximo.newSword;
 
 
 import com.dominoEximo.newSword.blocks.ModBlocks;
+import com.dominoEximo.newSword.entity.ModEntities;
+import com.dominoEximo.newSword.entity.client.SnakeRenderer;
 import com.dominoEximo.newSword.items.ModCreativeModTabs;
 
 import com.dominoEximo.newSword.items.ModItems;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -29,6 +32,7 @@ public class SwordModClass {
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
@@ -64,7 +68,7 @@ public class SwordModClass {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
-
+            EntityRenderers.register(ModEntities.SNAKE.get(), SnakeRenderer::new);
         }
     }
 }
