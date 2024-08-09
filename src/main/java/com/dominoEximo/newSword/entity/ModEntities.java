@@ -1,6 +1,7 @@
 package com.dominoEximo.newSword.entity;
 
 import com.dominoEximo.newSword.SwordModClass;
+import com.dominoEximo.newSword.entity.custom.MimicEntity;
 import com.dominoEximo.newSword.entity.custom.SnakeEntity;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.entity.MobCategory;
@@ -20,6 +21,13 @@ public class ModEntities {
                             MobCategory.CREATURE)
                                     .sized(1f,1f)
                             .build("snake"));
+
+    public static final RegistryObject<EntityType<MimicEntity>> MIMIC =
+            ENTITY_TYPES.register("mimic",
+                    () -> EntityType.Builder.of(MimicEntity::new,
+                                    MobCategory.MONSTER)
+                            .sized(1f,1f)
+                            .build("mimic"));
     public static void register(IEventBus eventBus){
         ENTITY_TYPES.register(eventBus);
     }

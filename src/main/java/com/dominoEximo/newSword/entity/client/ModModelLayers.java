@@ -8,4 +8,8 @@ public class ModModelLayers {
 
     public static final ModelLayerLocation SNAKE_LAYER = new ModelLayerLocation(
             ResourceLocation.fromNamespaceAndPath(SwordModClass.MODID,"snake_layer"),"main");
+
+    public static final ModelLayerLocation MIMIC_LAYER = new ModelLayerLocation(
+            ResourceLocation.fromNamespaceAndPath(SwordModClass.MODID,"mimic_layer"),"main");
+
 }

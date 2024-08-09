@@ -87,6 +87,9 @@ public class ModItems {
     //MISC
     public static final RegistryObject<Item> SNAKE_SPAW_EGG = ITEMS.register("snake_spawn_egg",
             () -> new ForgeSpawnEggItem(ModEntities.SNAKE,0x7e9680,0xc5d1c5, new Item.Properties()));
+
+    public static final RegistryObject<Item> MIMIC_SPAW_EGG = ITEMS.register("mimic_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.MIMIC,0x382109,0x8CC8D6, new Item.Properties()));
    public static void register(IEventBus eventBus){
        ITEMS.register(eventBus);
    }

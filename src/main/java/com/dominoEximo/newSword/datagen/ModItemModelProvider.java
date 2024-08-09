@@ -64,6 +64,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
         //Misc
         withExistingParent(ModItems.SNAKE_SPAW_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
+        withExistingParent(ModItems.MIMIC_SPAW_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
 
     }
 

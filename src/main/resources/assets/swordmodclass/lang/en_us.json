@@ -18,6 +18,8 @@
   "block.swordmodclass.sapphire_ore": "Sapphire Ore",
 
   "item.swordmodclass.snake_spawn_egg" : "Snake Spawn Egg",
+  "item.swordmodclass.mimic_spawn_egg" : "Mimic Spawn Egg",
+
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

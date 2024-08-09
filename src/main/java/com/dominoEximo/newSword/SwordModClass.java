@@ -3,7 +3,8 @@ package com.dominoEximo.newSword;
 
 import com.dominoEximo.newSword.blocks.ModBlocks;
 import com.dominoEximo.newSword.entity.ModEntities;
-import com.dominoEximo.newSword.entity.client.SnakeRenderer;
+import com.dominoEximo.newSword.entity.client.mimic.MimicRenderer;
+import com.dominoEximo.newSword.entity.client.snake.SnakeRenderer;
 import com.dominoEximo.newSword.items.ModCreativeModTabs;
 
 import com.dominoEximo.newSword.items.ModItems;
@@ -69,6 +70,7 @@ public class SwordModClass {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.SNAKE.get(), SnakeRenderer::new);
+            EntityRenderers.register(ModEntities.MIMIC.get(), MimicRenderer::new);
         }
     }
 }

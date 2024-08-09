@@ -47,6 +47,7 @@ public class ModCreativeModTabs {
 
                         //misc
                         output.accept(ModItems.SNAKE_SPAW_EGG.get());
+                        output.accept(ModItems.MIMIC_SPAW_EGG.get());
                     })
                     .build());
 

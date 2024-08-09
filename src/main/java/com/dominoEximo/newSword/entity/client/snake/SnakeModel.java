@@ -1,4 +1,4 @@
-package com.dominoEximo.newSword.entity.client;
+package com.dominoEximo.newSword.entity.client.snake;
 
 
 
@@ -6,7 +6,6 @@ import com.dominoEximo.newSword.entity.animations.ModAnimationDefinitions;
 import com.dominoEximo.newSword.entity.custom.SnakeEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
 
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
@@ -64,9 +63,9 @@ public class SnakeModel<T extends Entity> extends HierarchicalModel<T> {
 		this.root().getAllParts().forEach(ModelPart::resetPose);
 		this.applyHeadRotation(netHeadYaw,headPitch,ageInTicks);
 
-		this.animateWalk(ModAnimationDefinitions.move,limbSwing,limbSwingAmount+10,2f,2.5f);
-		this.animate(((SnakeEntity) entity).idleAnimationState, ModAnimationDefinitions.idle, ageInTicks, 1f);
-		this.animate(((SnakeEntity) entity).attackAnimationState, ModAnimationDefinitions.attack, ageInTicks, 1f);
+		this.animateWalk(ModAnimationDefinitions.SNAKE_MOVE,limbSwing,limbSwingAmount+10,2f,2.5f);
+		this.animate(((SnakeEntity) entity).idleAnimationState, ModAnimationDefinitions.SNAKE_IDLE, ageInTicks, 1f);
+		this.animate(((SnakeEntity) entity).attackAnimationState, ModAnimationDefinitions.SNAKE_ATTACK, ageInTicks, 1f);
 
 	}
 

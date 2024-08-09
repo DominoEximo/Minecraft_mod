@@ -1,13 +1,13 @@
-package com.dominoEximo.newSword.entity.client;
+package com.dominoEximo.newSword.entity.client.snake;
 
 import com.dominoEximo.newSword.SwordModClass;
+import com.dominoEximo.newSword.entity.client.ModModelLayers;
 import com.dominoEximo.newSword.entity.custom.SnakeEntity;
 import com.mojang.blaze3d.vertex.PoseStack;
 import net.minecraft.client.renderer.MultiBufferSource;
 import net.minecraft.client.renderer.entity.EntityRendererProvider;
 import net.minecraft.client.renderer.entity.MobRenderer;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.level.portal.DimensionTransition;
 
 public class SnakeRenderer extends MobRenderer<SnakeEntity,SnakeModel<SnakeEntity>> {
 
