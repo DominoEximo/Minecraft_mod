@@ -45,6 +45,8 @@ public class ModCreativeModTabs {
                         output.accept(ModItems.SAPPHIRE_LEGGINGS.get());
                         output.accept(ModItems.SAPPHIRE_BOOTS.get());
 
+                        //misc
+                        output.accept(ModItems.SNAKE_SPAW_EGG.get());
                     })
                     .build());
 

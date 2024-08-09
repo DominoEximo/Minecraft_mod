@@ -17,6 +17,7 @@
   "block.swordmodclass.raw_sapphire_block": "Block of Raw Sapphire",
   "block.swordmodclass.sapphire_ore": "Sapphire Ore",
 
+  "item.swordmodclass.snake_spawn_egg" : "Snake Spawn Egg",
 
   "creativetab.tutorial_tab": "Sapphire Tutorial Tab"
 }

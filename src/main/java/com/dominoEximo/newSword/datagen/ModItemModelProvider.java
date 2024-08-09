@@ -62,6 +62,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
 
+        //Misc
+        withExistingParent(ModItems.SNAKE_SPAW_EGG.getId().getPath(),mcLoc("item/template_spawn_egg"));
+
     }
 
     private void trimmedArmorItem(RegistryObject<Item> itemRegistryObject) {
